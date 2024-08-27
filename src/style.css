@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #ffffff;
+    color: black;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.games-info {
+    text-align: center;
+}
+
+.games-info h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.games-info h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.olympic-rings {
+    width: 200px; /* Ajusta el tamaño de la imagen de los anillos */
+    margin-top: 1rem;
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.athlete-image {
+    flex: 1;
+    margin: 0 450px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.medal {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.competitions {
+    background-color: #e7f3ff;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    border: 1px solid #0072bb;
+}
+
+.competitions h3 {
+    margin-bottom: 0.5rem;
+}
+
+.podium-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.podium {
+    background: #f0f0f0;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    margin-top: 2rem;
+}
+
+.competencias {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: #f9f9f9; /* Fondo claro */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.container--tabs {
+    border: 1px solid #e0e0e0; /* Borde ligero */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.nav-tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background: #fff; /* Fondo de las pestañas */
+}
+
+.nav-tabs li {
+    margin-right: 1rem;
+}
+
+.nav-tabs a {
+    text-decoration: none;
+    padding: 12px 20px; /* Espaciado uniforme */
+    color: #0072bb; /* Color del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background 0.3s; /* Transición suave */
+}
+
+.nav-tabs li.active a {
+    background: #0072bb; /* Color de fondo activo */
+    color: #fff; /* Texto blanco */
+}
+
+.nav-tabs a:hover {
+    background: rgba(0, 114, 187, 0.1); /* Efecto hover suave */
+}
+
+.data-table {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.tab-pane {
+    padding: 1rem;
+}
+
+.tab-content {
+    background: #fff; /* Fondo blanco para contenido */
+    border-top: 1px solid #e0e0e0; /* Borde superior */
+}
+
+.tabla-datos {
+    width: 100%;
+    border-collapse: collapse; /* Colapsar bordes */
+}
+
+.tabla-datos th, .tabla-datos td {
+    padding: 12px; /* Espaciado */
+    text-align: center; /* Alineación centrada */
+}
+
+.tabla-datos th {
+    background: #f1f1f1; /* Fondo para encabezados */
+}
+
+.tabla-datos tr:nth-child(even) {
+    background: #f9f9f9; /* Fondo alterno para filas */
+}
+
+.tabla-datos tr:hover {
+    background: rgba(0, 114, 187, 0.1); /* Efecto hover en filas */
+}
+
+#podium {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.podium-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.podium {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px; /* Ajusta el tamaño según lo que desees */
+}
+
+.podium:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.medal-image {
+    width: 100%; /* Hacer que la imagen ocupe el ancho del contenedor */
+    height: auto; /* Mantener la relación de aspecto */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.medal-image:hover {
+    transform: scale(1.05); /* Ampliar ligeramente la imagen al pasar el ratón */
+}
+
+#yusuf {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px; /* Espacio debajo de las imágenes */
+}
+
+.athlete-image {
+    width: 200px; /* Tamaño de las imágenes */
+    height: 600px; /* Mantiene la proporción 600x400 (3:2) */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.athlete-image:hover {
+    transform: scale(1.05); /* Ampliar ligeramente la imagen al pasar el ratón */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Sombra más fuerte al pasar el ratón */
+}
